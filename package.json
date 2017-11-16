@@ -1,0 +1,31 @@
+{
+  "name": "sf-extension-amcharts",
+  "version": "0.1.0",
+  "description": "Smartface Extension for running AM Charts in a WebView",
+  "main": "amcharts.js",
+  "scripts": {
+    "postinstall": "./scripts/get.sh",
+    "uninstall": "./scripts/remove.sh",
+    "get": "./scripts/get.sh",
+    "remove": "./scripts/remove.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smartface/sf-extension-amcharts.git"
+  },
+  "keywords": [
+    "amcharts",
+    "smartface",
+    "chart"
+  ],
+  "author": {
+    "name": "Smartface",
+    "email": "info@smartface.io",
+    "url": "http://smartface.io"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smartface/sf-extension-amcharts/issues"
+  },
+  "homepage": "https://github.com/smartface/sf-extension-amcharts#readme"
+}
