@@ -9,5 +9,5 @@ if [ -d $folder ]; then rm -rf $folder; fi
     unzip -q amcharts.zip 'amcharts/*' -d amcharts
     rm ./amcharts.zip
     cd amcharts
-    if [ -d $cwd/index.html ]; then mv $cwd/index.html ./index.html; fi
+    if [ -f $cwd/index.html ]; then cp $cwd/index.html ./index.html; fi
 )
