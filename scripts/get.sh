@@ -10,5 +10,5 @@ if [ -d $folder ]; then rm -rf $folder; fi
     rm ./amcharts.zip
     cd amcharts
     find -type f -not -name 'amcharts' -delete
-    mv cwd/index.html ./index.html
+    mv $cwd/index.html ./index.html
 )
