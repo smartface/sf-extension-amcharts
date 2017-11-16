@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/smartface/sf-extension-amcharts/issues"
   },
-  "homepage": "https://github.com/smartface/sf-extension-amcharts#readme"
+  "homepage": "https://github.com/smartface/sf-extension-amcharts#readme",
+  "dependencies": {
+    "wolfy87-eventemitter": "^5.2.4"
+  }
 }
