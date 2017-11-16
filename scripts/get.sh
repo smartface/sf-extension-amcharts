@@ -6,4 +6,5 @@ if [ -d $folder ]; then rm -rf $folder; fi
     cd ~/workspace/assets
     wget -O amcharts.zip $url
     unzip amcharts.zip  -d amcharts
+    rm ./amcharts.zip
 )
