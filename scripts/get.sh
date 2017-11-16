@@ -9,6 +9,6 @@ if [ -d $folder ]; then rm -rf $folder; fi
     unzip amcharts.zip  -d amcharts
     rm ./amcharts.zip
     cd amcharts
-    find [path] -type f -not -name 'amcharts' -delete
+    find -type f -not -name 'amcharts' -delete
     mv cwd/index.html ./index.html
 )
