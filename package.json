@@ -1,6 +1,6 @@
 {
   "name": "sf-extension-amcharts",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Smartface Extension for running AM Charts in a WebView",
   "main": "amcharts.js",
   "scripts": {

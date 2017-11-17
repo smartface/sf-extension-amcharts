@@ -11,7 +11,49 @@ Run the following code in terminal
 (cd ~/workspace/scripts && npm i -S sf-extension-amcharts)
 ```
 ## How to use
+Please review the [sampe page](sample/pgChart.js).
 
+1. require AMCharts
+```javascript
+const AMCharts = require("sf-extension-amcharts");
+```
+2. Create your AMCharts instance
+```javascript
+var amCharts = new AMCharts({
+     webView: wvChart //optional. If not provided use the the one amCharts.webView
+});
+```
+Ready is a Promise. It is a good practice to run other codes when the promise is resolved.
+
+3. When the chart web page is ready, install other AMCharts libraries.
+```javascript
+amCharts.loadScritsByName("serial");
+//OR load multiple files
+amCharts.loadScritsByName("serial", "funnel");
+```
+This loadScritsByName function loads files within assets/amcharts/amcharts folder.
+Those libraries are the libraries that AMCharts provides as is.
+loadScritsByName function returns a Promise. When it is done, the libraries are loaded.
+
+4. It is a good practice to run the Chart code with data after the libraries are loaded
+```javascript
+amCharts.evaluateJS(chartScript);
+```
+In the example above `chartScript` is a string that contains the JavaScript code to render the Chart and its data.
+In the webPage there is a div element with id `chartdiv`. Use this div element to render your chart.
+
+
+### Quick Run
+After installation please add the following code to the app.js by commenting out the other run codes.
+```javascript
+Router.add("pgChart", require("sf-extension-amcharts/sample/pgChart"));
+Router.go("pgChart");
+```
+
+### Coding Advice
+Running & rendering of the chart can take time. You can show an activity indicator while
+the chart is being rendered. After your last `evaluateJS` callback you can change the
+visibities of the ActivityIndicator and the WebView.
 
 ## Need Help?
 
