@@ -46,7 +46,7 @@ In the webPage there is a div element with id `chartdiv`. Use this div element t
 ### Quick Run
 After installation please add the following code to the app.js by commenting out the other run codes.
 ```javascript
-Router.add("pgChart", require("sf-extension-amcharts/sample/pgChart"));
+Router.add("pgChart", "sf-extension-amcharts/sample/pgChart");
 Router.go("pgChart");
 ```
 
